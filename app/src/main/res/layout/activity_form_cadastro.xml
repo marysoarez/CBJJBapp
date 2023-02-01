@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:context=".FormCadastro">
+
+
+        <TextView
+            android:id="@+id/title_cadastrese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/title_cadastro"
+            android:textColor="@color/black"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        <View
+            android:id="@+id/containerComponents"
+            style="@style/ContainerComponents"
+            android:layout_width="344dp"
+            android:layout_height="485dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.492"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_cadastrese" />
+
+
+        <EditText
+            android:id="@+id/edit_nome"
+            style="@style/Edit_Text"
+            android:hint="NOME"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:layout_width="350dp"
+            android:maxLength="250"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_user"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintEnd_toEndOf="@id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@+id/title_cadastrese"
+            />
+
+        <EditText
+            android:id="@+id/edit_email"
+            style="@style/Edit_Text"
+            android:hint="E-MAIL"
+            android:inputType="text"
+            android:maxLength="250"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_email2"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintEnd_toEndOf="@id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@id/edit_nome"
+            />
+
+        <EditText
+            android:id="@+id/edit_senha"
+            style="@style/Edit_Text"
+            android:hint="CRIE UMA SENHA NUMERICA"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="numberPassword"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_eye2"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintEnd_toEndOf="@id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@id/edit_email"
+            />
+
+        <EditText
+            android:id="@+id/edit_doc"
+            style="@style/Edit_Text"
+            android:hint="RG / CPF / PASSPORT"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_doc"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintEnd_toEndOf="@id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@id/edit_senha"
+            />
+        <EditText
+            android:id="@+id/edit_equipe"
+            style="@style/Edit_Text"
+            android:hint="EQUIPE"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:maxLength="250"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_equipe2"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintEnd_toEndOf="@id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@id/edit_doc"
+            />
+        <EditText
+            android:id="@+id/edit_tecnico"
+            style="@style/Edit_Text"
+            android:hint="PROFESSOR"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:inputType="text"
+            android:layout_width="350dp"
+            android:maxLength="250"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_doc"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintEnd_toEndOf="@id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@id/edit_equipe"
+            />
+
+        <EditText
+            android:id="@+id/edit_nascimento"
+            style="@style/Edit_Text"
+            android:hint="Nascimento(xx/xx/xxxx)"
+            android:inputType="date"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_doc"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintEnd_toEndOf="@id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@id/edit_tecnico"
+            />
+
+
+        <EditText
+            android:id="@+id/edit_genero"
+            style="@style/Edit_Text"
+            android:hint="Genero(Feminino/Masculino)"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:layout_width="350dp"
+            android:maxLength="9"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mw2"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintEnd_toEndOf="@id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@id/edit_nascimento"
+            />
+
+        <EditText
+            android:id="@+id/edit_peso"
+            style="@style/Edit_Text"
+            android:hint="Peso (00.00)"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:inputType="numberDecimal"
+            android:textColor="@color/black"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_categoria2"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintEnd_toEndOf="@id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@id/edit_genero"
+            />
+
+        <EditText
+            android:id="@+id/edit_telefone"
+            style="@style/Edit_Text"
+            android:hint="TELEFONE"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_telefone2"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintEnd_toEndOf="@id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@id/edit_peso"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/edit_grad"
+            style="@style/Edit_Text"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Graduacao"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:inputType="text"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="@id/containerComponents"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@id/edit_telefone" />
+
+
+        <Spinner
+            android:id="@+id/edit_faixa"
+            style="@style/Edit_Text"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:hint="Faixa"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:textColorHint="@color/black"
+            android:inputType="text"
+            android:spinnerMode="dropdown"
+            app:layout_constraintEnd_toEndOf="@id/containerComponents"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@id/edit_grad" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/bt_cadastrar"
+            style="@style/Button"
+            android:layout_marginTop="10dp"
+            android:text="Cadastrar"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edit_faixa"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
