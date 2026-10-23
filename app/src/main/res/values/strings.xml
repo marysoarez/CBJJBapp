@@ -2,8 +2,16 @@
     <string name="app_name">CBJJBapp</string>
     <string name="entrar">Entrar</string>
     <string name="title_cadastro">Cadastre-se</string>
+    <string name="title_edit">Alterar Informações</string>
     <string name="text_esqueceu">Esqueceu?</string>
-    <string name="text_cadastro">Cadastre-se</string>
+    <string name="text_cadastro">Cadastro</string>
+    <string name="text_cadequipe">Cadastrar Equipe</string>
+    <string name="text_salvar">Salvar Alterações</string>
+    <string name="text_editar">Editar Perfil</string>
+    <string name="title_cadEquipe">Cadastre sua Equipe</string>
+
+
+
     <string name="inserirfoto">Inserir Foto</string>
     <string-array name="faixas">
         <item>branca</item>
